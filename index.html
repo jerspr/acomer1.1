@@ -1,0 +1,92 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+  <meta charset="UTF-8">	
+	<title>Restaurant Picker</title> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="css/jquery.mobile.structure-1.3.1.min.css" />
+	<link rel="apple-touch-icon" href="images/launch_icon_57.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="images/launch_icon_72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="images/launch_icon_114.png" />
+	<link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--<link rel="stylesheet" href="custom.css" />-->
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.3.1.min.js"></script>
+	<script type="text/javascript" src="js/ui/jquery.ui.map.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head> 
+
+<body> 
+	<div data-role="page" id="home" data-theme="c">
+		<div class="mainHeaderPanel" data-role="header" data-position="inline" data-theme="o">
+			<div class="HomeLink">
+				<a href="/">
+					<div class="LogoImage"></div>
+				</a>
+			</div>
+		</div>
+		<div class="mainContentPanel" data-role="content">
+			<div class="splashPanel"><!-- ie --></div>
+			<div class="transWrapper">
+				<div class="transPanel"></div>
+				<div class="searchPanel">
+					<form action="lista.html" id="FindATable" method="get" data-transition="slidedown">
+						<label class="name_plate" for="text-basic">Por nombre de plato:</label>
+						<input type="text" name="Po" id="text-basic" value="">
+						<select name="select-choice-1" id="select-choice-1">
+						    <option>Elige una ciudad</option>
+						    <option value="standard">Miraflores</option>
+						    <option value="rush">San Isidro</option>
+						    <option value="express">Cercado de lima</option>
+						    <option value="overnight">La molina</option>
+						    <option value="overnight">Santa anita</option>
+						    <option value="overnight">Chorrillos</option>
+						    <option value="overnight">Punta hermosa</option>
+						    <option value="standard">Ate vitarte</option>
+						    <option value="rush">San de lurigancho</option>
+						    <option value="express">Breña</option>
+						    <option value="overnight">Lince</option>
+						    <option value="overnight">San bartolo</option>
+						    <option value="overnight">Lurin</option>
+						    <option value="overnight">Villa el salvador</option>
+						    <option value="standard">Villa maria</option>
+						    <option value="rush">Surco</option>
+						    <option value="express">Chosica</option>
+						    <option value="overnight">La molina</option>
+						    <option value="overnight">Santa anita</option>
+						    <option value="overnight">Chorrillos</option>
+						    <option value="overnight">Punta hermosa</option>
+						</select>					
+						<div class="wrapper button primary" style="margin-top:15px;">
+							<button id="FindATableButton" type="submit">Buscar</button>
+						</div>
+					</form>			
+				</div>
+			</div>
+
+		</div>
+		<div class="footerPlaceholder footerMainPanel withNavLinks"><!-- keep from collapsing --></div>
+		<div class="footerMainPanel withNavLinks" data-role="footer" data-position="fixed" data-theme="o">
+			<div class="homefooter alternative">
+				<div class="privacypolicy">
+					<a href="#">Politicas</a>
+				</div>
+				<div class="term">
+					<a href="#">Terminos</a>
+				</div>
+				<div class="fullsite">
+					<a href="#">ayuda</a>
+				</div>				
+			</div>
+			<div class="Legal">
+				<div class="copyright">
+					&copy; <span class="year">2013</span> <span class="company">Isg, Inc.</span>
+				</div>
+			</div>
+		</div>
+	</div><!-- /page -->
+</body>
+</html>
